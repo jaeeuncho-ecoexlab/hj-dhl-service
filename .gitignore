@@ -1,0 +1,10 @@
+# dependencies
+node_modules
+
+
+# environment 
+#environments // must be activated after forking
+
+# build
+dist
+package-lock.json

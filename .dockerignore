@@ -1,0 +1,8 @@
+# other than required files
+node_modules
+src
+package.json
+package-lock.json
+tsconfig.json
+webpack.config.js
+readme.md

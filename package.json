@@ -1,0 +1,34 @@
+{
+	"name": "express-app",
+	"version": "1.0.0",
+	"description": "Cookie Cutter like template for express js application",
+	"main": "src/app.ts",
+	"scripts": {
+		"start": "webpack --env NODE_ENV=local && node dist/bundle",
+		"dev": "npm run build-dev && node dist/bundle",
+		"prod": "npm run build-prod && node dist/bundle",
+		"build-dev": "webpack --env NODE_ENV=dev",
+		"build-prod": "webpack --env NODE_ENV=prod",
+		"test": "jest"
+	},
+	"author": "Jaeeun Cho",
+	"license": "ISC",
+	"dependencies": {
+		"@types/body-parser": "^1.19.0",
+		"@types/cors": "^2.8.10",
+		"@types/express": "^4.17.11",
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"@types/dotenv-webpack": "^5.0.0",
+		"dotenv-webpack": "^6.0.2",
+		"ts-loader": "^8.0.17",
+		"tsconfig-paths-webpack-plugin": "^3.3.0",
+		"typescript": "^4.2.2",
+		"webpack": "^5.24.2",
+		"webpack-cli": "^4.5.0",
+		"webpack-node-externals": "^2.5.2"
+	}
+}
